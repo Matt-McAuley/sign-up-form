@@ -9,6 +9,57 @@
     <script src="js-file.js" defer></script>
 </head>
 <body>
-    
+    <div class="imageContainer">
+        <img src="/images/background.jpg" alt="Casino background image">
+        <div class="bar">
+            <img src="images/logo.svg" alt="Casino chip logo" class="logo">
+            <p class="logoWords">Gamble!</p>
+        </div>
+    </div>
+    <div class="textContainer">
+        <header>
+            <h2>
+                Please input your information to get added to the epic gambler's
+                mailing list for all the awesome gamblers of the world. You are
+                going to win (lose) millions! [This is fake do not put real info please]
+            </h2>
+            <h2>
+                Sign up <em>now</em>.
+            </h2>
+        </header>
+        <form action="https://httpbin.org/post" method="post">
+            <h2>
+                Let's Go!
+            </h2>
+            <div>
+                <label for="firstname">First Name
+                <input type="text" id="firstname" name="firstname" required/>
+                </label>
+                <label for="email">Email
+                <input type="email" id="email" name="email" required/>
+                </label>
+                <label for="pwd">Password
+                <input type="password" id="pwd" name="pwd" required/>
+                </label>
+            </div>
+            <div>
+                <label for="lastname">Last Name
+                <input type="text" id="lastname" name="lastname" required/>
+                </label>
+                <label for="phone">Phone Number
+                <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required/>
+                </label>
+                <label for="confirm">Confirm Password
+                <input type="password" id="confirm" name="confirm" required/>
+                </label>
+            </div>
+            <button type="submit">
+                Create Account
+            </button>
+        </form>
+        <p>
+            Already have an account? <a href="https://google.com">Log in</a>
+        </p>
+    </div>
 </body>
 </html>
