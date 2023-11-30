@@ -28,38 +28,44 @@
             </h2>
         </header>
         <form action="https://httpbin.org/post" method="post">
-            <h2>
-                Let's Go!
-            </h2>
-            <div>
-                <label for="firstname">First Name
-                <input type="text" id="firstname" name="firstname" required/>
-                </label>
-                <label for="email">Email
-                <input type="email" id="email" name="email" required/>
-                </label>
-                <label for="pwd">Password
-                <input type="password" id="pwd" name="pwd" required/>
-                </label>
+            <div class="nonButton">
+                <h2>
+                    Let's Go!
+                </h2>
+                <div>
+                    <div class="input">
+                        <label for="firstname">*First Name
+                        <input type="text" id="firstname" name="firstname" required/>
+                        </label>
+                        <label for="email">*Email
+                        <input type="email" id="email" name="email" required/>
+                        </label>
+                        <label for="pwd">*Password
+                        <input type="password" id="pwd" name="pwd" required/>
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="lastname">*Last Name
+                        <input type="text" id="lastname" name="lastname" required/>
+                        </label>
+                        <label for="phone">*Phone Number
+                        <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required/>
+                        </label>
+                        <label for="confirm">*Confirm Password
+                        <input type="password" id="confirm" name="confirm" required/>
+                        </label>
+                    </div>
+                </div>
+            </div>    
+            <div class="button">
+                <button type="submit">
+                    Create Account
+                </button>
             </div>
-            <div>
-                <label for="lastname">Last Name
-                <input type="text" id="lastname" name="lastname" required/>
-                </label>
-                <label for="phone">Phone Number
-                <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required/>
-                </label>
-                <label for="confirm">Confirm Password
-                <input type="password" id="confirm" name="confirm" required/>
-                </label>
-            </div>
-            <button type="submit">
-                Create Account
-            </button>
         </form>
-        <p>
-            Already have an account? <a href="https://google.com">Log in</a>
-        </p>
+        <footer>
+            Already have an account? <a href="https://www.google.com/search?q=chicken&rlz=1C1CHBF_enUS831US831&ie=UTF-8" target="_blank">Log in</a>
+        </footer>
     </div>
 </body>
 </html>

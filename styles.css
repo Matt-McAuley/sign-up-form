@@ -11,6 +11,7 @@ body {
     width: 100vw;
 }
 
+/* Layout for  left side logo and image*/
 .imageContainer {
     width: 30vw;
     position: relative;
@@ -29,7 +30,7 @@ body {
     position: absolute;
     top: 10%;
     background-color: rgb(255, 255, 255);
-    opacity: 70%;
+    opacity: 80%;
     justify-content: center;
     align-items: center;
 }
@@ -46,4 +47,109 @@ body {
     font-family: Casino;
     font-size: 6.5rem;
     color: red;
+}
+
+/* Layout for right hand side form */
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    font-size: 18px;
+    background-color: rgb(241, 241, 241);
+    padding: 50px;
+}
+
+.nonButton > h2 {
+    margin: 0;
+    padding: 0px 20px;
+    font-size: 40px;
+    color: rgb(255, 0, 0);
+}
+
+.nonButton {
+    flex-grow: .2;
+    box-shadow: 1px 2px 5px black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nonButton > div {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+}
+
+.input {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: rgb(241, 241, 241);
+    padding: 30px 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    box-shadow: 2px 2px 5px black;
+}
+
+footer {
+    flex-grow: 1;
+    background-color: rgb(241, 241, 241);
+    padding: 10px 50px;
+}
+
+label {
+    color: rgb(0, 81, 255);
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    padding-bottom: 20px;
+}
+
+input {
+    width: 300px
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(216, 0, 0);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+input:invalid:focus {
+    outline: none;
+    border: 1px solid red;
+    border-radius: 3px;
+    box-shadow: 0 0 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(0, 68, 255);
+    border-radius: 3px;
+    box-shadow: 0 0 5px;
 }
