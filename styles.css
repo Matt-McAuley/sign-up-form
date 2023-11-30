@@ -35,6 +35,17 @@ body {
     align-items: center;
 }
 
+.credit {
+    position: absolute;
+    top: 97%;
+    color: white;
+    padding-left: 10px;
+}
+
+.credit > a {
+    color: aqua;
+}
+
 .logo {
     padding: 0;
     margin: 0px;
